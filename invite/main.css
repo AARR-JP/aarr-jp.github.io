@@ -1,0 +1,112 @@
+main {
+    text-align: center;
+}
+
+section h2 {
+    color: white;
+}
+
+section p {
+    color: snow;
+}
+
+div.guild-container {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px black;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+p.guild-label {
+    margin: 0px;
+    padding: 0.5em 5em 0.5em;
+    background-color: rgba(0, 0, 0, 0.125);
+}
+
+p.guild-label span {
+    vertical-align: middle;
+    font-size: 20px;
+    color: white;
+}
+
+p.icon-container {
+    margin-bottom: 0px;
+}
+
+p.icon-container img {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px red;
+}
+
+div.count-container {
+    margin: 0.5em;
+    padding: 0.25em 1em 0.25em;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 0px black inset;
+    background-color: rgba(0, 0, 0, 0.125);
+}
+
+div.count-container div.count {
+    padding: 0.25em 1em 0.25em;
+    display: inline-block;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 0px black inset;
+    color: snow;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.count * {
+    vertical-align: middle;
+}
+
+div.count-icon {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+div.online-count-icon {
+    box-shadow: 0px 0px 10px 0px greenyellow;
+    background-color: greenyellow;
+}
+
+div.member-count-icon {
+    box-shadow: 0px 0px 10px 0px snow;
+    background-color: snow;
+}
+
+p.get-fail {
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+a.join-btn {
+    padding: 0.25em 0.5em;
+    display: inline-block;
+    position: relative;
+    border-bottom: solid 2px darkred;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    font-weight: bold;
+    color: snow;
+    background-color: #252525;
+}
+
+a.join-btn:hover {
+    border-bottom: solid 2px maroon;
+    color: white;
+    background-color: #202020;
+}
+
+a.join-btn:active {
+    border-bottom: solid 2px #252525;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
