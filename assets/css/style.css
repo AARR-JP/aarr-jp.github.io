@@ -8,78 +8,76 @@ body {
     background-color: #393939;
 }
 
-header {
-    padding: 0.5em;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    background-color: black;
-}
-
-header:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.125);
-}
-
-header * {
-    margin: 0px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-a.logo-container {
-    text-decoration: none;
-}
-
-img.logo-image {
-    width: 75px;
-    height: 75px;
-}
-
-span.logo-label {
-    color: white;
-}
-
-nav.main-nav a {
-    padding: 0.5em;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 20px;
-    color: lightgray;
-}
-
-nav.main-nav a:hover {
-    transition: color 0.5s;
-    color: red;
-}
-
-nav.main-nav li:hover {
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 0px black inset;
-}
-
-div.wrapper {
+.wrapper {
     min-height: 100vh;
     position: relative;
     box-sizing: border-box;
 }
 
+header {
+    padding: 0.5em;
+    background-color: #1e1e1e;
+}
+
+.header-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo-wrapper {
+    margin: 0px 40px 0px 0px;
+}
+
+.logo-container {
+    text-decoration: none;
+}
+
+.logo-item {
+    vertical-align: middle;
+}
+
+.logo-image {
+    width: 48px;
+    height: 48px;
+}
+
+.logo-label {
+    color: #ffffff;
+}
+
+.main-nav, .nav-list, .nav-item {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.nav-link {
+    padding: 0.25em 0.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 16px;
+    color: #dedede;
+}
+
+.nav-link:hover {
+    transition: color 0.25s;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000000 inset;
+    color: #dc143c;
+}
+
+.link-current {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #520b0b inset !important;
+    color: #ffffff !important;
+    background-color: #8b0000;
+}
+
 main {
-    margin-left: 3vw;
-    margin-right: 3vw;
-    padding: 1em;
     display: block;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px red inset, 0px 0px 10px 0px black;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -87,16 +85,16 @@ footer {
     bottom: 0;
     position: absolute;
     text-align: center;
-    color: lightgray;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: #c0c0c0;
+    background-color: #1e1e1e;
 }
 
-footer a {
+.footer-link {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
-footer a:hover {
+.footer-link:hover {
     transition: color 0.25s;
-    color: red;
+    color: #ff0000;
 }

@@ -1,42 +1,24 @@
-section h2 {
-    color: white;
-}
-
-section p {
-    color: snow;
-}
-
-div.symbol-container {
-    display: inline-block;
-    border: solid 1px black;
-    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
-}
-
-img.symbol-image {
-    width: 250px;
-}
-
-div.symbol-label {
+.symbol-wrapper {
     text-align: center;
-    vertical-align: middle;
-    font-size: 14px;
-    background-color: lightgray;
 }
 
-a.join-btn {
-    padding: 0.25em 0.5em;
+.symbol-container {
+    border: solid 1px #808080;
     display: inline-block;
-    position: relative;
-    border-bottom: solid 2px orangered;
-    border-radius: 4px;
-    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    background-color: tomato;
 }
 
-a.join-btn:active {
-    border-bottom: solid 2px tomato;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+.symbol-image {
+    width: 216.9px;
+    height: 216.9px;
+    vertical-align: middle;
+}
+
+.symbol-label {
+    font-size: 14px;
+    color: #1f1f1f;
+    background-color: #d3d3d3;
+}
+
+.invite-container {
+    text-align: center;
 }

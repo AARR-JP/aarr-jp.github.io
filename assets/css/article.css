@@ -1,0 +1,28 @@
+main {
+    text-align: center;
+}
+
+.content-title {
+    color: #ffffff;
+}
+
+.content-container {
+    margin: 1em;
+    display: inline-block;
+    text-align: left;
+}
+
+.section-title {
+    margin: 0px;
+    padding: 0.5em;
+    border-left: solid 4px #dc143c;
+    line-height: 1;
+    color: #ffffff;
+    background-color: #808080;
+}
+
+.section-content {
+    margin: 0px;
+    padding: 2em 1em 1em 1em;
+    color: #cacaca;
+}
