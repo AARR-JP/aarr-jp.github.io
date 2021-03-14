@@ -11,26 +11,6 @@ function addInvite(inviteId, h) {
         holder.style.boxShadow = '0px 0px 10px 0px #000000 inset';
         holder.style.color = '#d3d3d3';
         holder.style.backgroundColor = '#2e2e2e';
-        function fail() {
-            var container = document.createElement('p');
-            holder.appendChild(container);
-            container.style.fontSize = '12px';
-            var span = document.createElement('span');
-            container.appendChild(span);
-            span.textContent = '招待リンクが正常に取得できませんでした。';
-            container.appendChild(document.createElement('br'));
-            span = document.createElement('span');
-            container.appendChild(span);
-            span.textContent = 'お手数をおかけしますが、Discordで';
-            var contact = document.createElement('span');
-            container.appendChild(contact);
-            contact.textContent = '夕立改二#2068';
-            contact.style.fontWeight = 'bold';
-            contact.style.color = '#ed143d';
-            span = document.createElement('span');
-            container.appendChild(span);
-            span.textContent = 'までご連絡ください。';
-        }
         if (xhr.readyState === 4 && (xhr.status >= 200 && xhr.status < 400)) {
             var res = JSON.parse(xhr.response),
                 container = document.createElement('div');
@@ -94,7 +74,26 @@ function addInvite(inviteId, h) {
             joinBtn.style.textAlign = 'center';
             joinBtn.style.color = '#ffffff';
             joinBtn.style.backgroundColor = '#ed143d';
-        } else fail();
+        } else {
+            var container = document.createElement('p');
+            holder.appendChild(container);
+            container.style.fontSize = '12px';
+            var span = document.createElement('span');
+            container.appendChild(span);
+            span.textContent = '招待リンクが正常に取得できませんでした。';
+            container.appendChild(document.createElement('br'));
+            span = document.createElement('span');
+            container.appendChild(span);
+            span.textContent = 'お手数をおかけしますが、Discordで';
+            var contact = document.createElement('span');
+            container.appendChild(contact);
+            contact.textContent = '夕立改二#2068';
+            contact.style.fontWeight = 'bold';
+            contact.style.color = '#ed143d';
+            span = document.createElement('span');
+            container.appendChild(span);
+            span.textContent = 'までご連絡ください。';
+        }
     };
     xhr.send();
 }
