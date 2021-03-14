@@ -93,7 +93,7 @@ function addInvite(inviteId, h) {
             joinBtn.style.textDecoration = 'none';
             joinBtn.style.textAlign = 'center';
             joinBtn.style.color = '#ffffff';
-            joinBtn.style.backgroundColor = 'crimson';
+            joinBtn.style.backgroundColor = '#ed143d';
         } else fail();
     };
     xhr.send();
