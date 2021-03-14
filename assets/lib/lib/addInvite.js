@@ -32,9 +32,8 @@ function addInvite(inviteId, h) {
             span.textContent = 'までご連絡ください。';
         }
         if (xhr.readyState === 4 && (xhr.status >= 200 && xhr.status < 400)) {
-            var res = JSON.parse(xhr.response);
-            console.log('res: ', res);
-            var container = document.createElement('div');
+            var res = JSON.parse(xhr.response),
+                container = document.createElement('div');
             holder.appendChild(container);
             container.style.display = 'flex';
             container.style.alignItems = 'center';
